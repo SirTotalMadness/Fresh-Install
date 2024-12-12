@@ -1,20 +1,19 @@
 sudo apt update
 sudo apt install nala
-nala fetch
+sudo nala fetch
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo nala update
 sudo nala upgrade -y
 
-
-sudo nala -v
-
 sudo nala install git python3-venv python3-pip
 sudo nala install pipx powerline-gitstatus
 sudo nala install python-is-python3 wslu
+
 pipx install pdm
 pipx inject pdm cookiecutter
 pipx install ipython
 pipx inject ipython requests
+
 ln -s "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" $HOME/msedge.exe
 
 code ~/.bashrc
