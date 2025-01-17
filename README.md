@@ -5,6 +5,7 @@
 This script is designed to automate the installation process for setting up a new environment. It includes all necessary steps and dependencies to get your system up and running quickly.
 
 ## Usage
+https://github.com/microsoft/cascadia-code/releases
 
 1. Clone the repository:
     ```sh
