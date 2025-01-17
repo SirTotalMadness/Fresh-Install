@@ -17,7 +17,8 @@ pipx install ipython
 pipx inject ipython requests
 ln -s "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" $HOME/msedge.exe
 
-code ~/.bashrc
+
+cat << 'EOF' >> ~/.bashrc
 
 # powerline
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
@@ -38,14 +39,11 @@ export BROWSER=$HOME/msedge.exe
 alias here='explorer.exe `wslpath -w $PWD`' # open current directory in windows explorer
 alias o="wslview" # open file with default program in windows
 
-here
+EOF
 
-touch test.txt
-o test.txt
+source ~/.bashrc
 
-ssh-keygen -C "email@email.com"
+ssh-keygen -C
 cat ~/.ssh/id_rsa.pub | clip.exe
 
 ssh -T git@github.com
-
-git clone git@github.com:"username/repo.git"

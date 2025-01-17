@@ -2,7 +2,6 @@ winget update --all
 winget install Microsoft.VisualStudioCode
 wsl --install --d Ubuntu
 
-C:/users/ndevos/.wslconfig
-
-[wsl2]
-networkingMode=Mirrored
+REM
+echo [wsl2] >> C:/users/ndevos/.wslconfig
+echo networkingMode=Mirrored >> C:/users/ndevos/.wslconfig
