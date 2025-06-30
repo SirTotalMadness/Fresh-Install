@@ -42,7 +42,7 @@ EOF
 
 source ~/.bashrc
 
-ssh-keygen -C
-cat ~/.ssh/id_rsa.pub | clip.exe
+echo 'ssh-keygen -C'
+echo 'cat ~/.ssh/id_rsa.pub | clip.exe'
 
-ssh -T git@github.com
+echo 'ssh -T git@github.com'
