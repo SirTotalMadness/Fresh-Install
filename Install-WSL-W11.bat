@@ -1,7 +1,10 @@
 winget update --all
-winget install Microsoft.VisualStudioCode
 wsl --install --d Ubuntu
 
-REM
-echo [wsl2] >> C:/users/ndevos/.wslconfig
-echo networkingMode=Mirrored >> C:/users/ndevos/.wslconfig
+@echo off
+REM Get the current user's home directory
+set userProfile=%USERPROFILE%
+
+REM Append WSL configuration settings to the .wslconfig file
+echo [wsl2] >> "%userProfile%\.wslconfig"
+echo networkingMode=Mirrored >> "%userProfile%\.wslconfig"

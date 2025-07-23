@@ -25,7 +25,7 @@ https://github.com/microsoft/cascadia-code/releases
 ## Requirements
 
 - Operating System: Windows12
-- Dependencies: Windows12 Keyboard?
+- Dependencies: Keyboard? Brain?
 
 ## Features
 
